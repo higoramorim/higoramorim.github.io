@@ -20,5 +20,8 @@ html, body{
 .container {
     font-size: 20px;
     color: aquamarine;
+}
+
+li {
     display: inline-block;
 }
