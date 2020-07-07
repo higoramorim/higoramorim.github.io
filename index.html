@@ -20,6 +20,8 @@ header{
 html, body{
     height: 100%;
     background-color: #ccccff;
+    font-size: 13px;
+    line-height: 1.5em;
 }
 
 .container {
@@ -29,6 +31,14 @@ html, body{
 
 .dados-gerais {
     color: orangered;
+    font-family: fantasy;
+}
+
+#casal{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .location {
@@ -39,13 +49,21 @@ html, body{
     color: indigo;
 } 
 
-.d-inline-block{
-  align-items: right;
+.d-inline-block, logo{
   color: white;
+  display: block;
+  margin-left: right;
+  margin-right: right;
+  width: 40%;
 }
+
 
 #higor{
   padding-right: 50px;
+}
+
+.clearfix {
+  overflow: auto;
 }
 
 #color{
@@ -98,43 +116,28 @@ html, body{
     <br>
     <div class="dados-gerais">
       <h1>General Information</h1>
-        <table>
-            <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Age</th>
-            </tr>
-            <tr>
-              <strong><em><td>Higor</td></em></strong>
-              <td>Amorim</td>
-              <td>35</td>
-            </tr>
-          </table>
+        <ul>
+          <li>First name: Higor</li>
+          <li>Last name: Amorim</li>
+          <li>Nationality: Brazilian</li>
+          <li>Work with: programming</li>
+        </ul>
     </div>
     <br>
     <br>
     <div>
-        <p>Foto da  nossa última viagem para Caldas Novas, foi uma ótima viagem, mesmo diringo 11h de São Paulo até lá</p>
+        <p class="clearfix">Foto da  nossa última viagem para Caldas Novas, foi uma ótima viagem, mesmo diringo 11h de São Paulo até lá</p>
         <img id="casal" src="casal.jpeg" style="width: 400px;" alt="casal" >
     </div>
     <br>
     <br>
     <div class="location">
       <h1>Location</h1>
-        <table>
-            <tr>
-              <th>Nationality</th>
-              <th>Country</th>
-              <th>State</th>
-              <th>City</th>
-            </tr>
-            <tr>
-              <td>Brazilian</td>
-              <td>Brazil</td>
-              <td>São Paulo</td>
-              <td>São Paulo</td>
-            </tr>
-          </table>
+          <ul>
+            <li>Country: Brazil</li>
+            <li>State: São Paulo</li>
+            <li>City: São Paulo</li>
+          </ul>
     </div>
     <br>
     <br>
