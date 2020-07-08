@@ -1,41 +1,70 @@
 
 
-html, body{
+body{
     margin: auto;
     width: 100%;
+    border: black;
+    border-radius: 5%;
     height: 100%;
-    background-color: #ccccff;
-    font-size: 13px;
-    line-height: 1.5em;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header.cabecalho{
+#container{
+  background-color: green;
+}
+
+.cabecalho{
   height: 20%;
   padding: 40px 2%;
   background-color: #3333ff;
 }
 
-header.menu{
+.menu{
   height: 20%;
   background-color: aqua;
+  align-items: center;
+  font-size: large;
+  padding: 20px;
+  list-style-position: inside;
 }
 
-
-.container {
-    font-size: 20px;
-    color: aquamarine;
+#logo{
+  position: relative;
+  float: left;
+  width: 210px;
 }
 
 .dados-gerais {
-    color: orangered;
+    color: white;
     font-family: fantasy;
+    display: inline-block;
+    border: 2px groove lightblue;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: black;
+}
+
+.casal{
+  display: inline-block;
+  border: 2px groove lightblue;
+  position: relative;
+  width: 50%;
+  background-color: #e6e6e6;
+  border-radius: 5%;
 }
 
 #casal{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+}
+
+.descricao{
+    width: 50%;
+    padding-left: 2%;
+    display: inline-block;
+    text-justify: auto;
+    text-align: justify;
+    text-shadow: lightgreen;
 }
 
 .location {
@@ -68,17 +97,6 @@ header.menu{
   color: darkred;
 }
 
-          table,
-          th,
-          td {
-            padding: 10px;
-            border: 2px solid black;
-            border-collapse: collapse;
-            border-radius: 3%;
-            border-style: double;
-            text-align: center;
-            vertical-align: bottom;
-          }
 .footer {
   background-color: black;
 }
