@@ -17,6 +17,8 @@ header{
     line-height: 30px;
     font-size: larger;
     font-weight: bolder;
+    list-style-type: none;
+
 }
 
 .article-text h1{
@@ -57,4 +59,15 @@ header{
 
 #olho{
     float: left;
+}
+
+aside{
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
 }
