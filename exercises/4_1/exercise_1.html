@@ -183,6 +183,57 @@ let lu;
 lu = (1000*1.2)-(1000*1);
 console.log("o lucro dessa operação é de: "+lu +"reais");
 
+alert("exercicio 11");
+//salario bruto(salB)
+//inss
+//Salário bruto até R$ 1.556,94: alíquota de 8% (0,08)
+//Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9% (0,09)
+//Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11% (0,11)
+//Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+
+//ir
+//Até R$ 1.903,98: isento de imposto de renda = 0
+//De R$ 1.903,99 a 2.826,65: alíquota de 7,5%(0,075) e parcela de R$ 142,80 a deduzir do imposto
+//De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% (0,15)e parcela de R$ 354,80 a deduzir do imposto
+//De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5%(0,225) e parcela de R$ 636,13 a deduzir do imposto
+//Acima de R$ 4.664,68: alíquota de 27,5%(0,275) e parcela de R$ 869,36 a deduzir do imposto.
+
+//cálculo = salB*inss*ir
+
+let salB,inss,ir,salL;
+function check(salB){
+    if (salB < 1556.94){
+        salL=salB - salB*0,08
+        console.log(salL);
+    }else if (salB >= 1556.95 || salB <= 2594.92){
+        salL=salB - salB*0.09 
+        console.log(salL);
+    }else if (salB >= 2594.93 || salB <= 5189.82){
+        salL=salB - salB*0,11
+        console.log(salL);
+    }else if (salB > 5189.82){
+        salL=salB - (salB - 570.88);
+}
+}
+function checker(salB){
+    if (salB < 1903.98){
+        salL=salB
+        console.log(salLL);
+    }else if(salB >=1903.99 || salB <2826.65){
+        (salB >=2826.66 || salB < 3751.05)
+        salL=salB - salB*0.15
+        console.log(salLL);
+    }else if(salB >=3751.06 || salB < 4664.68){
+        salL=salB - salB*0.255
+        console.log(salLL);
+    }else if(salB > 4664.68){
+        salL=salB - 869.36;
+
+    }
+    }
+let salFinal = check(2500) +checker(2500) - 2500;
+console.log(salFinal);
+
 
     </script>
 </body>
