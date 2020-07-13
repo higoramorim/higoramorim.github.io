@@ -86,7 +86,37 @@ function ehTriagulo(h,i,g){
 alert(ehTriagulo(90,90,90));
 alert("fim do programa 5");
 alert("exercicio 6");
-
+let peca;
+Rei = ["Rei se move: ","uma casa", "frente", "trás", "esquerda", "direita", "diagonal direita", "diagonal esquerda"];
+Raiha = ["Rainha se move: ","sem limite casa", "frente", "trás", "esquerda", "direita", "diagonal esquerda", "diagonal direita"];
+Torre = ["Torre se move: ","sem limite casa", "frente", "trás", "esquerda", "direita"];
+Bispo = ["Bispo se move: ","sem limite casa", "diagonal esquerda", "diagonal direita"];
+Cavalo = ["Cavalo se move: ","três casa em L", "frente", "trás", "esquerda", "direita"];
+Peao = ["Peão se move: ","frente"];
+function xadrez(peca){
+switch (peca){
+    case Rei:
+        console.log(Rei);
+        break;
+    case Rainha:
+        console.log(Rainha);
+        break;
+    case Torre:
+        console.log(Torre);
+        break;
+    case Bispo:
+        console.log(Bispo);
+        break;
+    case Cavalo:
+        console.log(Cavalo);
+        break;
+    case Peao:
+        console.log(Peao);
+        break;
+}
+}
+xadrez(Rei);
+alert("fim exercicio 6");
     </script>
 </body>
 </html>
