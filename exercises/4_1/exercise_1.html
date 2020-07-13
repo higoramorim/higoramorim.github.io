@@ -151,9 +151,37 @@ let a1, a2,a3;
 function umEhPar(a1,a2,a3){
     if(a1 % 2 == 0 || a2 % 2 == 0 || a3 % 2 ==0){
         return console.log("pelo menos um é par")
+    }else{
+        console.log("todos são ímpares");
     }
 }
 umEhPar(2,7,9);
+
+alert("exercicio 9");
+let b1,b2,b3;
+function emEhImpar(b1,b2,b3){
+    if(b1 % 2 != 0 || b2 % 2 != 0 || b3 % 2 != 0){
+        return console.log("pelo menos um é impar");
+    }else{
+        console.log("todos são pares");
+    }
+}
+emEhImpar(2,2,2);
+alert("fim ex 9");
+alert("exercicio 10");
+//quantidade = 1000 peças
+//preço de custo (pc) = 0,8(preço custo)+0,2(impostos)
+//preço de custo (pc) = R$1,00
+//custo impostos (i) = R$0,20
+//1000 * 1,00 = R$1000,00 venda bruta(VB)
+//1000 * 0,20 = R$200,00 custo impostos
+//lucro (lu) = R$1000,00 - R$200,00 = R$800,00
+let quant = 1000;
+let pc = 1;
+let pv = 1.2;
+let lu;
+lu = (1000*1.2)-(1000*1);
+console.log("o lucro dessa operação é de: "+lu +"reais");
 
 
     </script>
