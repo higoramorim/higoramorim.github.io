@@ -9,26 +9,26 @@
 //  ****
 // *****
 
+/*
+    for(let linha = 0; linha <= linhas; linha += 1){
+        let padrao = ''+'*';
+        for(let i = 0;i < linha; i+=1){
+            padrao += '';
+        }
+        console.log(padrao);   
+    }*/
+
 let padrao = '';
 let resultado = '*';
-console.log(' '+' '+' '+' '+resultado);
+asteristicosExibir(5);
 
-for( i = 1; i <= 2; i += 1){
-    padrao += '*';
+function asteristicosExibir(linhas){
+    for(let i = 0; i < linhas; i += 1){
+        padrao += '';
+        for(let linha = 0; linha <= linhas; linha +=1){
+            let padrao = ''+'*';
+        console.log(padrao);
+        
+    }
 }
-console.log(' '+padrao);
-
-for( i = 1; i <= 3; i += 1){
-    padrao += '*';
-}
-console.log(' '+' '+padrao);
-
-for( i = 1; i <= 4; i += 1){
-    padrao += '*';
-}
-console.log(padrao);
-
-for( i = 1; i <= 5; i += 1){
-    padrao += '*';
-}
-console.log(padrao);
+    
