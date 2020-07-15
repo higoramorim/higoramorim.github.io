@@ -11,3 +11,22 @@
 //de fazer uma checagem a cada iteração e armazenar
 // os resultados em algum lugar.
 
+exibirNumerosPrimos(100);
+
+function exibirNumerosPrimos(limite){
+    for(let numero = 2; numero <= limite; numero +=1){
+        let ehPrimo = true;
+
+
+        for (let divisor = 2; divisor < numero; divisor += 1){
+            if (numero % divisor === 0){
+                ehPrimo = false;
+                break;
+
+
+            }
+        }
+        if (ehPrimo) console.log(numero + " é primo");
+    }
+   
+}
