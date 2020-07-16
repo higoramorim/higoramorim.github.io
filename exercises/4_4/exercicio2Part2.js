@@ -3,4 +3,8 @@
 //Array de teste: [2, 3, 6, 7, 10, 1];.
 let myArray = [2,5,47,0,8];
 //Valor esperado no retorno da função: 2.
+let max = myArray.reduce(function(a,b,){
+    return Math.max(a,b);
+});
 
+console.log(max);
