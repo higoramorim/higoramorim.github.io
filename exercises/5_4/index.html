@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p id="text">Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum é o texto fictício padrão do setor desde os anos 1500, quando uma impressora desconhecida pegou uma galera do tipo e a mexeu para fazer um livro de espécimes. Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como o Aldus PageMaker, incluindo versões do Lorem Ipsum.</p>
+
+    Qual a cor de plano de fundo que deseja?<input class="input" id="1" value="gray"></input><br>
+
+    Qual a cor de texto que deseja?<input class="input" id="2" value=""></input><br>
+
+    Qual o tamanho de fonte que deseja?<input class="input" id="3" value=""></input><br>
+
+    Qual espaçamento entre as linhas do texto que deseja?<input class="input" id="4" value=""></input><br>
+
+    Qual o estilo de letra que deseja?<input class="input" id="5" value=""></input><br>
+
+    <script>
+        //alterar o background-color
+        //rgb(x,x,x) => x 0 a 255 =>cor tipo "rgb(x,x,x)";
+        //Math.random(x)*255
+
+        let bgColor = document.querySelector("body");
+        let textBox = document.getElementById("1").value;
+        bgColor.style.backgroundColor = textBox;
+
+
+        //alterar a cor do texto color
+        let textColor = document.getElementById("text");
+        textColor.style.color = document.getElementById("2").nodeValue;
+
+        //tamanho da fonte font-size
+        let fontSize = document.getElementById("text");
+        fontSize.style.fontSize = document.getElementById("3").nodeValue;
+
+        //alterar o line-height
+        let lineHeight = document.getElementById("text");
+        lineHeight.style.lineHeight = document.getElementById("4").nodeValue;
+
+        //alterar o tipo de fonte
+        let fontFamily = document.querySelector("body");
+        fontFamily.style.fontFamily = document.getElementById("5").nodeValue;
+    </script>
+</body>
+</html>
