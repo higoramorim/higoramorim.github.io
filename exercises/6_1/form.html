@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <fieldset>
+
+        <section>
+            <label for="">Nome:</label>
+            <input required="required" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
+        </section>
+        <section>
+            <label for="">Email:</label>
+            <input required="required" name="email" maxlength="50" placeholder="insira seu email" type="text">
+        </section>
+        <section>
+            <label for="">CPF:</label>
+            <input required="required" name="cpf" maxlength="11" placeholder="insira seu CPF" type="number">
+        </section>
+        <section>
+            <label for="">Endereço:</label>
+            <input required="required" name="cpf" maxlength="200" placeholder="insira seu endereço" type="text">
+        </section>
+        <section>
+            <label for="">Cidade:</label>
+            <input required="required" name="cpf" maxlength="28" placeholder="insira sua cidade" type="text">
+        </section>
+        <section>
+            <label for="">Estado:</label>
+            <select required="required" name="estado">
+                <option selected="selected" value="" id="option-states">Selecione:</option>
+            </select>
+
+        </section>
+        <section>
+            <p>Tipo de moradia:</p>
+            <label for="m1"><input type="radio" name="ap" id="m1" value="ap">Apartamento</label>
+            <label for="m2"><input type="radio" name="cs" id="m2" value="cs">Casa</label>
+        </section>
+    </fieldset>
+    <fieldset>
+        <section>
+        <label for="">Resumo do Currículo:</label>
+        <textarea name="cv" placeholder="insira o resumo do seu cv" required="required" cols="15" rows="15" maxlength="500"></textarea>
+        </section>
+        <section>
+            <label for="">Cargo:</label>
+            <input required="required" maxlength="40" type="text" placeholder="seu cargo">
+        </section>
+        <section>
+            <label for="">Data de início:</label>
+            <input required="required" type="date">
+        </section>
+        <section>
+            <button>Interrompe fluxo</button>
+        </section>
+        <section>
+            <button>Limpar</button>
+        </section>
+    </fieldset>
+    
+</body>
+</html>
