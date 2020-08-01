@@ -6,67 +6,69 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
-    <script src="jquery-3.5.1.slim.min.js"></script>
-    <script src="bootstrap-4.5.0-dist/css/bootstrap.min.css"></script>
-    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.slim.min.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js" defer></script>
 </head>
 <body>
     <fieldset>
-        <section class="container">
+        <div class="container">
             <h2 class="display-4 text-muted">FORM</h2>
             <hr>
 
-        <section class="form-group">
+        <div class="form-group">
             <label for="">Nome:</label>
-            <input class="form-control" required="required" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
-        </section>
-        <section class="form-group">
+            <input class="form-control form-control-lg" required="required" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
+        </div>
+        <div class="form-group">
             <label for="">Email:</label>
-            <input  class="form-control" required="required" name="email" maxlength="50" placeholder="insira seu email" type="text">
-        </section>
-        <section class="form-group">
+            <input  class="form-control " required="required" name="email" maxlength="50" placeholder="insira seu email" type="email">
+            <small id="emailHelp" class="form-text text-muted">Uso interno na base de dados</small>
+        </div>
+        <div class="form-group">
             <label for="">CPF:</label>
-            <input class="form-control" required="required" name="cpf" maxlength="11" placeholder="insira seu CPF" type="number">
-        </section>
-        <section class="form-group">
+            <input class="form-control form-control-sm" required="required" name="cpf" maxlength="11" placeholder="insira seu CPF" type="number">
+        </div>
+        <div class="form-group">
             <label for="">Endereço:</label>
             <input class="form-control" required="required" name="cpf" maxlength="200" placeholder="insira seu endereço" type="text">
-        </section>
-        <section class="form-group">
+            <small id="addressHelp" class="form-text text-muted">Endereço residencial</small>
+        </div>
+        <div class="form-group">
             <label for="">Cidade:</label>
             <input class="form-control" required="required" name="cpf" maxlength="28" placeholder="insira sua cidade" type="text">
-        </section>
-        <section class="form-group">
+        </div>
+        <div class="form-group">
             <label for="">Estado:</label>
             <select required="required" name="estado" id="option-states">
             </select>
 
-        </section>
-        <section class="form-group">
+        </div>
+        <div class="form-group">
             <p>Tipo de moradia:</p>
-            <label for="m1"><input class="form-control" type="radio" name="ap" id="m1" value="ap">Apartamento</label>
-            <label for="m2"><input class="form-cotrol" type="radio" name="cs" id="m2" value="cs">Casa</label>
-        </section>
+            <label for="m1"><input class="form-control col-auto" type="radio" name="ap" id="m1" value="ap">Apartamento</label>
+            <label for="m2"><input class="form-cotrol col-auto" type="radio" name="cs" id="m2" value="cs">Casa</label>
+        </div>
     </fieldset>
     <fieldset>
-        <section class="form-group">
+        <div class="form-group">
         <label for="">Resumo do Currículo:</label>
         <textarea class="fonrm-control" name="cv" placeholder="insira o resumo do seu cv" required="required" cols="15" rows="15" maxlength="500"></textarea>
-        </section>
-        <section class="form-group">
+        </div>
+        <div class="form-group">
             <label for="">Cargo:</label>
             <input class="form-control" required="required" maxlength="40" type="text" placeholder="seu cargo">
-        </section>
-        <section class="form-group">
+        </div>
+        <div class="form-group">
             <label for="">Data de início:</label>
             <input class="form-control" required="required" type="date">
-        </section>
-        <section class="form-group">
-            <button id="stop">Interrompe fluxo</button>
-        </section>
-        <section class="form-group">
-            <button id="clean" type="reset">Limpar</button>
-        </section>
+        </div>
+        <div class="form-group">
+            <button id="stop" class="btn btn-info">Interrompe fluxo</button>
+        </div>
+        <div class="form-group">
+            <button id="clean" class="btn btn-dark" type="button">Limpar</button>
+        </div>
     </fieldset>
     
 </body>
