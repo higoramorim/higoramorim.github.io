@@ -1,4 +1,3 @@
-const optionDad = document.querySelector('#option-states');
 const states = ['AM', 'AC', 'MG', 'RJ', 'SP', 'TO', 'RO', 'RR', 'PA', 'RS', 'PR', 'PA', 'MA', 'PI','GO', 'DF','BA', 'CE', 'MT','MS','ES','SC','AL','AP','PB','RN','SE'];
 const orderedStates = states.sort();
 

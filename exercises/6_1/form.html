@@ -6,59 +6,65 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/css/bootstrap.min.css"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <fieldset>
+        <section class="container">
+            <h2 class="display-4 text-muted">FORM</h2>
+            <hr>
 
-        <section>
+        <section class="form-group">
             <label for="">Nome:</label>
-            <input required="required" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
+            <input class="form-control" required="required" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
         </section>
-        <section>
+        <section class="form-group">
             <label for="">Email:</label>
-            <input required="required" name="email" maxlength="50" placeholder="insira seu email" type="text">
+            <input  class="form-control" required="required" name="email" maxlength="50" placeholder="insira seu email" type="text">
         </section>
-        <section>
+        <section class="form-group">
             <label for="">CPF:</label>
-            <input required="required" name="cpf" maxlength="11" placeholder="insira seu CPF" type="number">
+            <input class="form-control" required="required" name="cpf" maxlength="11" placeholder="insira seu CPF" type="number">
         </section>
-        <section>
+        <section class="form-group">
             <label for="">Endereço:</label>
-            <input required="required" name="cpf" maxlength="200" placeholder="insira seu endereço" type="text">
+            <input class="form-control" required="required" name="cpf" maxlength="200" placeholder="insira seu endereço" type="text">
         </section>
-        <section>
+        <section class="form-group">
             <label for="">Cidade:</label>
-            <input required="required" name="cpf" maxlength="28" placeholder="insira sua cidade" type="text">
+            <input class="form-control" required="required" name="cpf" maxlength="28" placeholder="insira sua cidade" type="text">
         </section>
-        <section>
+        <section class="form-group">
             <label for="">Estado:</label>
             <select required="required" name="estado" id="option-states">
             </select>
 
         </section>
-        <section>
+        <section class="form-group">
             <p>Tipo de moradia:</p>
-            <label for="m1"><input type="radio" name="ap" id="m1" value="ap">Apartamento</label>
-            <label for="m2"><input type="radio" name="cs" id="m2" value="cs">Casa</label>
+            <label for="m1"><input class="form-control" type="radio" name="ap" id="m1" value="ap">Apartamento</label>
+            <label for="m2"><input class="form-cotrol" type="radio" name="cs" id="m2" value="cs">Casa</label>
         </section>
     </fieldset>
     <fieldset>
-        <section>
+        <section class="form-group">
         <label for="">Resumo do Currículo:</label>
-        <textarea name="cv" placeholder="insira o resumo do seu cv" required="required" cols="15" rows="15" maxlength="500"></textarea>
+        <textarea class="fonrm-control" name="cv" placeholder="insira o resumo do seu cv" required="required" cols="15" rows="15" maxlength="500"></textarea>
         </section>
-        <section>
+        <section class="form-group">
             <label for="">Cargo:</label>
-            <input required="required" maxlength="40" type="text" placeholder="seu cargo">
+            <input class="form-control" required="required" maxlength="40" type="text" placeholder="seu cargo">
         </section>
-        <section>
+        <section class="form-group">
             <label for="">Data de início:</label>
-            <input required="required" type="date">
+            <input class="form-control" required="required" type="date">
         </section>
-        <section>
+        <section class="form-group">
             <button id="stop">Interrompe fluxo</button>
         </section>
-        <section>
+        <section class="form-group">
             <button id="clean" type="reset">Limpar</button>
         </section>
     </fieldset>
