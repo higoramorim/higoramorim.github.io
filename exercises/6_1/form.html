@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js" defer></script>
     <script src="jquery-3.5.1.slim.min.js" defer></script>
     <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
@@ -21,11 +20,11 @@
 
         <div class="form-group">
             <label for="">Nome:</label>
-            <input class="form-control form-control-lg" required="required" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
+            <input class="form-control form-control-lg" required="required" id="user-name" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
         </div>
         <div class="form-group">
             <label for="">Email:</label>
-            <input  class="form-control " required="required" name="email" maxlength="50" placeholder="insira seu email" type="email">
+            <input  class="form-control " required="required" name="email" id="email" maxlength="50" placeholder="insira seu email" type="email">
             <small id="emailHelp" class="form-text text-muted">Uso interno na base de dados</small>
         </div>
         <div class="form-group">
@@ -34,7 +33,7 @@
         </div>
         <div class="form-group">
             <label for="">Endereço:</label>
-            <input class="form-control" required="required" name="cpf" maxlength="200" placeholder="insira seu endereço" type="text">
+            <input class="form-control" required="required" name="cpf" id="address" maxlength="200" placeholder="insira seu endereço" type="text">
             <small id="addressHelp" class="form-text text-muted">Endereço residencial</small>
         </div>
         <div class="form-group">
@@ -64,13 +63,16 @@
         </div>
         <div class="form-group">
             <label for="">Data de início:</label>
-            <input class="form-control"  id="data-inicio" required="required" type="">
+            <input class="form-control"  id="data-inicio" required="required" type="date">
         </div>
         <div class="form-group">
             <button id="stop" class="btn btn-info">Interrompe fluxo</button>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="add">
             <button id="clean" class="btn btn-dark" type="button">Limpar</button>
+        </div>
+        <div class="form-group">
+            <button id="submit" class="btn btn-dark" type="submit">Envio</button>
         </div>
     </fieldset>
     

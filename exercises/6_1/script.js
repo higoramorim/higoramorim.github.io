@@ -11,7 +11,9 @@ for (let index = 0; index < orderedStates.length; index++) {
 }
 }
 
-document.getElementById('data-inicio').DatePickerX.init();
+const inputUsername = document.querySelector('#user-name');
+const inputAddress = document.querySelector('#address');
+const inputEmail = document.querySelector('#email');
 
 
 
