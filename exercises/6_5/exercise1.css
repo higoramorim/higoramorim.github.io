@@ -1,0 +1,51 @@
+/*Faça o tamanho da fonte ser maior;
+
+Faça o tamanho da fonte dos elementos h1 ser menor;
+
+Aumente o espaçamento entre as figuras;
+
+Adicione um pouco de margin na página.
+*/
+
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 360) {
+    h1 {
+        font-size: medium;
+    }
+
+    figure {
+        line-height: 100px;
+    }
+
+    body {
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 360) and (max-width: 600){
+    body {
+        background-color: brown;
+    }
+
+
+    h1 {
+        font-size: 
+    }
+}
