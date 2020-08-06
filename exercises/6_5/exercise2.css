@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (min-width: 320px) and (max-widht: 411px){
+  body{
+    background-color: royalblue;
+  }
+
+}
+
+@media screen and (min-width: 412px) and (max-width: 768px){
+  body {
+    background-color: rgba(50, 50, 50, 0.8);
+  }
+
+  .container {
+    padding: 10px;
+    line-height: 1.3em;
+  }
+  
+}
+
+@media screen and (min-width: 769px){
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .container {
+    padding: 20px;
+    line-height: 1.5em;
+  }
+  
+}

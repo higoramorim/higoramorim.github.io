@@ -8,13 +8,20 @@ Adicione um pouco de margin na página.
 */
 
 body {
-
+    font-size: 15px;
+    line-height: 1.2rem;
+    padding: 0;
+    margin: 0;
+    color:rgba(100,100,100,0.8);
 }
 h1 {
+    color: black;
+    text-align: center;
 
 }
 h2 {
-
+    color: black;
+    text-align: center;
 }
 
 img {
@@ -25,27 +32,53 @@ figure {
     margin: 0;
 }
 
-@media screen and (max-width: 360) {
-    h1 {
-        font-size: medium;
-    }
-
-    figure {
-        line-height: 100px;
-    }
-
+@media screen and (min-width: 320px) and (max-widht: 411px){
     body {
-        background-color: blueviolet;
+    font-size: 15px;
+    line-height: 1.2rem;
+    color: rgba(100,100,100,0.8);
+    margin: 0 auto;
+    }
+    img {
+        max-width: 100%;
+    }
+    figure {
+        margin: 0;
     }
 }
 
-@media screen and (min-width: 360) and (max-width: 600){
+@media screen and (min-width: 412px) and (max-width: 768px){
     body {
-        background-color: brown;
-    }
+        font-size: 20px;
+        line-height: 1.5rem;
+        color: royalblue;
+        margin: 5px auto;
+        }
+        img {
+            max-width: 80%;
+            align-items: center;
+        }
+        figure {
+            margin: 5px;
+            align-items: center;
+        }
 
+}
 
-    h1 {
-        font-size: 
-    }
+@media screen and (min-width: 769px){
+    body {
+        font-size: 25px;
+        line-height: 1.8rem;
+        color: rosybrown;
+        margin: 0 auto;
+        }
+        img {
+            max-width: 70%;
+            align-items: center;
+        }
+        figure {
+            margin: 10px;
+            align-items: center;
+        }
+
 }
