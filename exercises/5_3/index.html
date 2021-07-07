@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Libs Loucos</h1>
+
+    <ul>
+        <li> Substantivo: <input type = "text" id = "noun">
+        <li> Adjetivo: <input type = "text" id = "adjective">
+        <li> Nome de alguém: <input type = "text" id = "person">
+       </ul>
+
+       <button id ="lib-button" onclick="LibIt()"> Lib it! </button>
+  
+       <div id ="story"> </div>
+    <script>
+
+
+        //Adicione um ouvinte de evento ao botão para que ele chame uma makeMadLibfunção quando clicado.
+        function LibIt(){
+            let storyDiv = document.getElementById("story");
+            let pessoa = document.getElementById("pessoa").value;
+            let adjetivo = document.getElementById("adjetivo").value;
+            let Substantivo = document.getElementById("substantivo").value;
+            storyDiv.innerHTML = pessoa + "tem um(a)" + Substantivo + "tão" + adjetivo
+        }
+
+        let libButton = document.getElementById('lib-button');
+        libButton.addEventListener('clique',LibIt);
+
+        //Na makeMadLibfunção, recupere os valores atuais dos elementos de entrada do formulário, 
+        //crie uma história a partir deles e produza isso na divisão da história (como "Pamela realmente gosta de pepinos cor de rosa")
+    </script>
+</body>
+</html>

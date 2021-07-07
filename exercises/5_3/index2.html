@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset = utf-8 />
+<title> Calculadora </title>
+</head>
+<body>
+
+  <label> Coloque este número ao quadrado:
+    <input type = "number" id = "square-input" size = "2">
+  </label>
+  <button id = "square-button" onclick="aoQuadrado()"> Calcular </button>
+  <br> <br>
+  
+  <label> Metade deste número:
+    <input type = "number" id = "meia entrada" size = "2">
+  </label>
+  <button id = "half-button"> Calcular </button>
+  <br> <br>
+  
+  <rótulo>
+    Fração:
+    <input type = "number" id = "percent1-input" size = "2">
+  </label>
+  <rótulo>
+    Todo:
+    <input type = "number" id = "percent2-input" size = "2">
+  </label>
+  <button id = "percent-button"> Calcular </button>
+  <br> <br>
+  
+  <label> Calcule a área do círculo com raio:
+    <input type = "number" id = "area-input" size = "2">
+  </label>
+  <button id = "area-button"> Calcular </button> 
+  <br> <br>
+  <div id = "solution"> </div>
+
+  <script>
+
+      function aoQuadrado(number){
+          let numberSquared = number * number
+          console.log('o resultado é: '+numberSquared);
+          return numberSquared;
+      }
+     
+
+      var squareButton = document.getElementById ("botão quadrado");
+squareButton.addEventListener ("click", function () {
+  var num = document.getElementById ("entrada quadrada"). value;
+  document.getElementById ("solução"). innerHTML = squareNumber (num);
+});
+
+      /*
+      Adicione uma tag de script e adicione as funções do exercício da calculadora (veja a solução se você ainda não a tiver feito).
+Para cada operação, crie um ouvinte de evento para o botão e, quando clicar, encontre o valor da entrada apropriada e mostre o resultado do cálculo na div da solução.
+Bônus: responda às teclas pressionadas para que o usuário não precise clicar no botão.*/
+  </script>
+</body>
+</html>

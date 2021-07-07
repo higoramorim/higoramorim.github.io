@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <script src="jquery-3.5.1.slim.min.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="./home/higor/to/just-validate.min.js"> </script>
+</head>
+<body>
+    <fieldset>
+        <div class="container">
+            <h2 class="display-4 text-muted">FORM</h2>
+            <hr>
+
+        <div class="form-group">
+            <label for="">Nome:</label>
+            <input class="form-control form-control-lg" required="required" id="user-name" name="nome" type="text" placeholder="insira seu nome" maxlength="40">
+        </div>
+        <div class="form-group">
+            <label for="">Email:</label>
+            <input  class="form-control " required="required" name="email" id="email" maxlength="50" placeholder="insira seu email" type="email">
+            <small id="emailHelp" class="form-text text-muted">Uso interno na base de dados</small>
+        </div>
+        <div class="form-group">
+            <label for="">CPF:</label>
+            <input class="form-control form-control-sm" required="required" name="cpf" maxlength="11" placeholder="insira seu CPF" type="number">
+        </div>
+        <div class="form-group">
+            <label for="">Endereço:</label>
+            <input class="form-control" required="required" name="cpf" id="address" maxlength="200" placeholder="insira seu endereço" type="text">
+            <small id="addressHelp" class="form-text text-muted">Endereço residencial</small>
+        </div>
+        <div class="form-group">
+            <label for="">Cidade:</label>
+            <input class="form-control" required="required" name="cpf" maxlength="28" placeholder="insira sua cidade" type="text">
+        </div>
+        <div class="form-group">
+            <label for="">Estado:</label>
+            <select required="required" name="estado" id="option-states">
+            </select>
+
+        </div>
+        <div class="form-group">
+            <p>Tipo de moradia:</p>
+            <label for="m1"><input class="form-control col-auto" type="radio" name="ap" id="m1" value="ap">Apartamento</label>
+            <label for="m2"><input class="form-cotrol col-auto" type="radio" name="cs" id="m2" value="cs">Casa</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="form-group">
+        <label for="">Resumo do Currículo:</label>
+        <textarea class="fonrm-control" name="cv" placeholder="insira o resumo do seu cv" required="required" cols="15" rows="15" maxlength="500"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">Cargo:</label>
+            <input class="form-control" required="required" maxlength="40" type="text" placeholder="seu cargo">
+        </div>
+        <div class="form-group">
+            <label for="">Data de início:</label>
+            <input class="form-control"  id="data-inicio" required="required" type="date">
+        </div>
+        <div class="form-group">
+            <button id="stop" class="btn btn-info">Interrompe fluxo</button>
+        </div>
+        <div class="form-group" id="add">
+            <button id="clean" class="btn btn-dark" type="button">Limpar</button>
+        </div>
+        <div class="form-group">
+            <button id="submit" class="btn btn-dark" type="submit">Envio</button>
+        </div>
+    </fieldset>
+    
+</body>
+</html>

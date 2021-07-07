@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My page</h1>
+
+    <script>
+        alert("exercicio 1");
+        alert("programa soma (2 +3)");
+        let a,b;
+        function adicao(a, b){
+            alert(a+b);
+        }
+        adicao(2,3);
+
+        alert("programa subtração (2 -3)");
+        function subtracao(a,b){
+            alert(a-b);
+        }
+        subtracao(2,3);
+
+        alert("programa multiplicação (2 * 3)");
+        function multiplicacao(a,b){
+            alert(a*b);
+        }
+        multiplicacao(2,3);
+
+        alert("programa divisão (2 / 3)");
+        function divisao(a,b){
+            alert(a/b);
+        }
+        divisao(2,3);
+        alert("fim do exercicío 1");
+
+        alert("exercício 2");
+        alert("inspecione a página (Crtl+Shift+I)")
+        function maiorQue (x, y){
+            if (x > y){
+                console.log(x);
+            }else{
+                console.log(y);
+            }
+        }
+        alert(maiorQue(5,10));
+        alert("fim do programa 2");
+        alert("exercício 3");
+        function maiorDosTres(n1,n2,n3){
+        if (n1 > n2 && n1 > n3){
+            console.log(n1)
+        }else if (n2 > n1 && n2 > n3){
+            console.log(n2)
+        }else{
+            console.log(n3)
+        }
+    }
+    alert(maiorDosTres(2,4,6));
+    alert("fim exercíco 3");
+    alert("exercício 4");
+    alert("insira um número");
+    let h;
+    function positiveNegative(h){
+    if (h > 0){
+        console.log("positive");
+    }else if(h < 0){
+        console.log("negative");
+    }else{
+        console.log("zero");
+    }
+}
+alert(positiveNegative(-8));
+alert("fim do programa 4");
+alert("exercício 5");
+alert("p, q e r são ângulos internos de um possível triângulo");
+let p,q,r;
+function ehTriagulo(h,i,g){
+    if (p+q+r == 180){
+        console.log("é um triângulo");
+    }else (p+q+r < 180 || p+q+r >180);{
+        console.log("não é um triângulo")
+    }   
+}
+alert(ehTriagulo(90,90,90));
+alert("fim do programa 5");
+alert("exercicio 6");
+let peca;
+Rei = ["Rei se move: ","uma casa", "frente", "trás", "esquerda", "direita", "diagonal direita", "diagonal esquerda"];
+Raiha = ["Rainha se move: ","sem limite casa", "frente", "trás", "esquerda", "direita", "diagonal esquerda", "diagonal direita"];
+Torre = ["Torre se move: ","sem limite casa", "frente", "trás", "esquerda", "direita"];
+Bispo = ["Bispo se move: ","sem limite casa", "diagonal esquerda", "diagonal direita"];
+Cavalo = ["Cavalo se move: ","três casa em L", "frente", "trás", "esquerda", "direita"];
+Peao = ["Peão se move: ","frente"];
+function xadrez(peca){
+switch (peca){
+    case Rei:
+        console.log(Rei);
+        break;
+    case Rainha:
+        console.log(Rainha);
+        break;
+    case Torre:
+        console.log(Torre);
+        break;
+    case Bispo:
+        console.log(Bispo);
+        break;
+    case Cavalo:
+        console.log(Cavalo);
+        break;
+    case Peao:
+        console.log(Peao);
+        break;
+}
+}
+xadrez(Rei);
+alert("fim exercicio 6");
+alert("exercicio 7");
+alert("regras converter em letras de A até F percentis de 0 a 100");
+
+let nota=70;
+function pass(nota){
+
+    switch (nota){
+        case nota >=90:
+            console.log("A");
+            break;
+        case nota >=80:
+            console.log("B");
+            break;
+        case nota >=70:
+            console.log("C");
+            break;
+        case nota >=60:
+            console.log("D");
+            break;
+        case nota >=50:
+            console.log("E");
+            break;
+        case nota <50:
+            console.log("F");
+            break;
+    }
+}
+pass(70);
+alert("fim exercicio 7");
+alert("exercicio 8");
+let a1, a2,a3;
+function umEhPar(a1,a2,a3){
+    if(a1 % 2 == 0 || a2 % 2 == 0 || a3 % 2 ==0){
+        return console.log("pelo menos um é par")
+    }else{
+        console.log("todos são ímpares");
+    }
+}
+umEhPar(2,7,9);
+
+alert("exercicio 9");
+let b1,b2,b3;
+function emEhImpar(b1,b2,b3){
+    if(b1 % 2 != 0 || b2 % 2 != 0 || b3 % 2 != 0){
+        return console.log("pelo menos um é impar");
+    }else{
+        console.log("todos são pares");
+    }
+}
+emEhImpar(2,2,2);
+alert("fim ex 9");
+alert("exercicio 10");
+//quantidade = 1000 peças
+//preço de custo (pc) = 0,8(preço custo)+0,2(impostos)
+//preço de custo (pc) = R$1,00
+//custo impostos (i) = R$0,20
+//1000 * 1,00 = R$1000,00 venda bruta(VB)
+//1000 * 0,20 = R$200,00 custo impostos
+//lucro (lu) = R$1000,00 - R$200,00 = R$800,00
+let quant = 1000;
+let pc = 1;
+let pv = 1.2;
+let lu;
+lu = (1000*1.2)-(1000*1);
+console.log("o lucro dessa operação é de: "+lu +"reais");
+
+alert("exercicio 11");
+//salario bruto(salB)
+//inss
+//Salário bruto até R$ 1.556,94: alíquota de 8% (0,08)
+//Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9% (0,09)
+//Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11% (0,11)
+//Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+
+//ir
+//Até R$ 1.903,98: isento de imposto de renda = 0
+//De R$ 1.903,99 a 2.826,65: alíquota de 7,5%(0,075) e parcela de R$ 142,80 a deduzir do imposto
+//De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% (0,15)e parcela de R$ 354,80 a deduzir do imposto
+//De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5%(0,225) e parcela de R$ 636,13 a deduzir do imposto
+//Acima de R$ 4.664,68: alíquota de 27,5%(0,275) e parcela de R$ 869,36 a deduzir do imposto.
+
+//cálculo = salB*inss*ir
+
+let salB,inss,ir,salL;
+function check(salB){
+    if (salB < 1556.94){
+        salL=salB - salB*0,08
+        console.log(salL);
+    }else if (salB >= 1556.95 || salB <= 2594.92){
+        salL=salB - salB*0.09 
+        console.log(salL);
+    }else if (salB >= 2594.93 || salB <= 5189.82){
+        salL=salB - salB*0,11
+        console.log(salL);
+    }else if (salB > 5189.82){
+        salL=salB - (salB - 570.88);
+}
+}
+function checker(salB){
+    if (salB < 1903.98){
+        salL=salB
+        console.log(salLL);
+    }else if(salB >=1903.99 || salB <2826.65){
+        (salB >=2826.66 || salB < 3751.05)
+        salL=salB - salB*0.15
+        console.log(salLL);
+    }else if(salB >=3751.06 || salB < 4664.68){
+        salL=salB - salB*0.255
+        console.log(salLL);
+    }else if(salB > 4664.68){
+        salL=salB - 869.36;
+
+    }
+    }
+let salFinal = check(2500) +checker(2500) - 2500;
+console.log(salFinal);
+
+
+    </script>
+</body>
+</html>

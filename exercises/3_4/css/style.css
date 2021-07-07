@@ -1,0 +1,73 @@
+body{
+    background-color: cornflowerblue;
+    font-family: monospace, sans-serif;
+    font-size: 13px;
+}
+
+header{
+    border: 1px groove #4dffff;
+    background-color: aqua;
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+.aside-indices{
+    line-height: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    list-style-type: none;
+
+}
+
+.article-text h1{
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.article-text p{
+    float: right;
+}
+
+#stoma{
+    width: 350px;
+    float: left;
+}
+
+.boxe #boxe-gif{
+    float: left;
+}
+
+.boxe p{
+    float: right;
+}
+
+.dados-gerais{
+    text-align: left;
+}
+
+.dados-gerais h2 p{
+    float: left;
+}
+
+.visao h2 p{
+    float: right;
+}
+
+#olho{
+    float: left;
+}
+
+aside{
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
